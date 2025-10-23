@@ -1,0 +1,179 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+============================== */
+@page {
+    size: A4 portrait;
+    margin: 1.5cm;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-container {
+    background: white;
+    max-width: 21cm;
+    min-height: 27.94cm;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* ==============================
+   ENCABEZADO
+============================== */
+.header {
+    background-color: #27374D;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1cm 1.5cm;
+}
+
+.profile-photo {
+    width: 3.5cm;
+    height: 3.5cm;
+    border-radius: 50%;
+    margin-right: 1.5cm;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.header-info h1 {
+    font-size: 35px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.header-info span {
+    color: #fcfcfc;
+}
+
+.header-info h2 {
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 0.2cm;
+}
+
+/* ==============================
+   CONTENIDO
+============================== */
+.content {
+    display: flex;
+    flex: 1;
+}
+
+/* ==============================
+   COLUMNA IZQUIERDA
+============================== */
+.left-column {
+    width: 35%;
+    background: #E6E8EC;
+    padding: 1cm;
+}
+
+.left-column h3 {
+    background: #27374D;
+    color: white;
+    padding: 0.3cm;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.left-column section {
+    margin-bottom: 0.8cm;
+}
+
+.left-column ul {
+    padding-left: 1em;
+    margin: 0.4cm 0 0 0;
+}
+
+.left-column li {
+    list-style: none;
+    font-size: 17px;
+    line-height: 1.4em;
+}
+
+.left-column i {
+    color: #27374D;
+    margin-right: 0.4em;
+}
+
+/* ==============================
+   COLUMNA DERECHA
+============================== */
+.right-column {
+    width: 65%;
+    padding: 1cm;
+}
+
+.right-column h3 {
+    color: #27374D;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 3px;
+    margin-bottom: 0.3cm;
+    font-size: 19px;
+}
+
+.right-column p, 
+.right-column li {
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+.job {
+    margin-bottom: 0.6cm;
+}
+
+.job h4 {
+    margin: 0;
+    font-size: 17px;
+    color: #000;
+}
+
+.job-info {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 0.2cm;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+/* ==============================
+   AJUSTES DE IMPRESIÓN
+============================== */
+@media print {
+    body {
+        background: white;
+    }
+    .cv-container {
+        box-shadow: none;
+        margin: 0;
+    }
+}
+/* ==============================
+   CONTACTO
+============================== */
+.contact p {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.contact i {
+    font-size: 16px;
+    color: #27374D;
+    width: 20px;
+    text-align: center;
+}
